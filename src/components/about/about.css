@@ -1,5 +1,5 @@
-.about{
-    padding-left: 150px;
+.grid{
+    display: grid;
 }
 
 .about_container {
@@ -99,4 +99,52 @@
 
 .about_title{
     font-size: 1.875rem;
+}
+
+@media screen and (max-width: 600px){
+    .section{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 10px;
+    }
+    .section_title{
+        text-align: center;
+    }
+    .about_container{
+        font-size: 0.7rem;
+    }
+
+    .grid{
+        display: inline-block;
+        /* justify-content: center; */
+        /* align-items: center; */
+        margin-top: 5%;
+    }
+
+    .about_description{
+        width: 100%;
+    }
+
+    .about_img{
+        width: 75%;
+        padding-left: 25%;
+    }
+
+    .about_boxes{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .work_filters{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .services_card, .work_card{
+        margin: 5%;
+    }
+
+    .contact_form_group{
+        display: block;
+    }
 }

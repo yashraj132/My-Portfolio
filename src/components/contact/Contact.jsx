@@ -24,7 +24,7 @@ const handleInput = (e) => {
 const handleSubmit = async (e) => {
   e.preventDefault();;
 
-    const response = await fetch('http://localhost:8080/demo', {
+    const response = await fetch('https://my-portfolio-src-iota.vercel.app/', {
       method: 'POST', 
       body: JSON.stringify(contact),
       headers:{

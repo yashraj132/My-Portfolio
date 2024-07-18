@@ -11,6 +11,7 @@ const [contact, setContact] = useState({
   message: "",
 });
 
+
 const handleInput = (e) => {
   const name = e.target.name;
   const value = e.target.value;
@@ -22,24 +23,42 @@ const handleInput = (e) => {
 }
 
 const handleSubmit = async (e) => {
-  e.preventDefault();;
-
-    const response = await fetch('https://my-portfolio-src-iota.vercel.app', {
-      method: 'POST', 
-      body: JSON.stringify(contact),
-      headers:{
-      'Content-Type':'application/json'
-      }
-    })
-    const data = await response.json();
-    console.log(data);
-    if (response.ok) {
-      alert("Thank You for messaging.");
-      setContact({ username: "", phone: "", email: "", subject: "", message: "" });
-    } else {
-      console.log("error inside response ", "error");
-    }
+  e.preventDefault();
+  const config = {
+    SecureToken: 'ef6d6c3b-fc77-4e83-bd15-a89059f0bca8',
+    To : 'pandeyy304@gmail.com',
+    From : contact.email,
+    Subject : "This is the subject",
+    Body : `Name : ${contact.name},
+          Mobile : ${contact.phone},
+          Topic : ${contact.subject},
+          Message : ${contact.message}`
   }
+  if(window.Email){
+    window.Email.send(config).then(() => alert("Your message sent successfully."));
+  }
+  setContact({ username: "", phone: "", email: "", subject: "", message: "" });
+}
+
+// const handleSubmit = async (e) => {
+//   e.preventDefault();;
+
+//     const response = await fetch('https://my-portfolio-src-iota.vercel.app', {
+//       method: 'POST', 
+//       body: JSON.stringify(contact),
+//       headers:{
+//       'Content-Type':'application/json'
+//       }
+//     })
+//     const data = await response.json();
+//     console.log(data);
+//     if (response.ok) {
+//       alert("Thank You for messaging.");
+//       setContact({ username: "", phone: "", email: "", subject: "", message: "" });
+//     } else {
+//       console.log("error inside response ", "error");
+//     }
+//   }
 
   return (
     <section className="contact container section" id="contact">

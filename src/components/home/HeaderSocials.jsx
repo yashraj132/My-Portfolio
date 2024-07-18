@@ -11,7 +11,7 @@ const HeaderSocials = () => {
         <i className="fa-brands fa-linkedin"></i>
       </a>
 
-      <a href="https://www.codechef.com/users/yrp8002" className='home_social-link' target="_blank">
+      <a href="https://leetcode.com/u/Pandey_3011/" className='home_social-link' target="_blank">
         <i class="fa-solid fa-code"></i>
       </a>
 

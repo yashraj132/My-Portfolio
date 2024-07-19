@@ -101,6 +101,11 @@
     font-size: 1.875rem;
 }
 
+.about_img{
+    filter: drop-shadow(1px 1px 20px rgb(181, 181, 181));
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 600px){
     .section{
         padding-left: 0px;
@@ -112,13 +117,6 @@
     }
     .about_container{
         font-size: 0.7rem;
-    }
-
-    .grid{
-        display: inline-block;
-        /* justify-content: center; */
-        /* align-items: center; */
-        margin-top: 5%;
     }
 
     .about_description{
@@ -146,5 +144,13 @@
 
     .contact_form_group{
         display: block;
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    .grid{
+        display: inline-flex;
+        flex-direction: column;
+        margin-top: 5%;
     }
 }

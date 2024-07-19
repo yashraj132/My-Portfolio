@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: loading 1.5s steps(5) forwards;
+    animation: loading 0.2s steps(5) forwards;
 }
 
 .intro{

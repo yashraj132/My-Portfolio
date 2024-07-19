@@ -47,3 +47,9 @@
 .contact_form-area textarea{
     resize: none;
 }
+
+@media screen and (max-width: 600px) {
+    .contact_container{
+        width: 100%;
+    }
+}

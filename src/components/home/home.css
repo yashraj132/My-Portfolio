@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: loading 1.5s steps(5) forwards;
 }
 
 .intro{
@@ -11,9 +12,11 @@
     text-align: center;
 }
 
-.home_img{
-    margin-bottom: 1.5rem;
+.home_img{   
+    margin: 1rem;
     height: 200px;
+    filter: drop-shadow(1px 1px 20px rgb(181, 181, 181));
+    border-radius: 20px;
 }
 
 .home_name{

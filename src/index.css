@@ -90,6 +90,12 @@ img{
   vertical-align: middle;
 }
 
+.animated_text{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    animation: typing 3.5s steps(30, end),
+    blink-caret step-end infinite;
+}
 /* Reusable CSS Classes */
 .container{
   max-width: 1080ox;
@@ -145,6 +151,39 @@ img{
   100% {
     transform: scale(1);
   }
+}
+
+@keyframes loading {
+  0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.2;
+    }
+    40% {
+      opacity: 0.4;
+    }
+    60% {
+      opacity: 0.6;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(224, 224, 224); }
 }
 
 .btn:hover{

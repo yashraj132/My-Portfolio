@@ -96,3 +96,8 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+.work_img{
+    width: 100%;
+    height: 100%;
+}

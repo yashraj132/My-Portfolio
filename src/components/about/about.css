@@ -107,6 +107,10 @@
 }
 
 @media screen and (max-width: 600px){
+    .about_boxes{
+        visibility: hidden;
+        flex-direction: column;
+    }
     .section{
         padding-left: 0px;
         padding-right: 0px;
@@ -149,8 +153,7 @@
 
 @media screen and (max-width: 900px ) {
     .grid{
-        display: inline-flex;
-        flex-direction: column;
+        display: block;
         margin-top: 5%;
     }
 }

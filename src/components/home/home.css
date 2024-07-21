@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     animation: loading 0.2s steps(5) forwards;
+    overflow-x: hidden;
 }
 
 .intro{

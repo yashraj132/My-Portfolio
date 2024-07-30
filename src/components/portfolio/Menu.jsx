@@ -1,9 +1,8 @@
 import Work1 from "../../assets/gym back.jpg";
 import Work2 from "../../assets/hungry panda.jpg";
-import Work3 from "../../assets/chat app.png";
-// import Work4 from "../../assets/work-4.svg";
-// import Work5 from "../../assets/work-5.svg";
-// import Work6 from "../../assets/work-6.svg";
+import Work3 from "../../assets/Sales Dashboard.png";
+import Work4 from "../../assets/Placement.png";
+import Work5 from "../../assets/chat app.png";
 
 
 const Menu = [
@@ -12,6 +11,7 @@ const Menu = [
       image: Work1,
       title: "Youth Gym - React FrontEnd WebApp",
       category: "Web Designing",
+      link: "www.google.com"
     },
     {
       id: 2,
@@ -22,30 +22,22 @@ const Menu = [
     {
       id: 3,
       image: Work3,
+      title: "Sales Dashboard - Power BI",
+      category: "Data Analytics",
+    },
+    ,
+    {
+      id: 4,
+      image: Work4,
+      title: "Placements Dashboard - Power BI",
+      category: "Data Analytics",
+    },
+    {
+      id: 5,
+      image: Work5,
       title: "Chat Application Y-Chat",
       category: "Web Designing",
-    },
-    // ,
-    // {
-    //   id: 4,
-    //   image: Work4,
-    //   title: "Onboarding Motivation",
-    //   category: "Others",
-    // },
-    // ,
-    // {
-    //   id: 5,
-    //   image: Work5,
-    //   title: "iMac Mockup Design",
-    //   category: "Others",
-    // },
-    // ,
-    // {
-    //   id: 6,
-    //   image: Work6,
-    //   title: "NA",
-    //   category: "Others",
-    // },
+    }
   ];
   
 export default Menu

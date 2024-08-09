@@ -11,7 +11,6 @@ const Menu = [
       image: Work1,
       title: "Youth Gym - React FrontEnd WebApp",
       category: "Web Designing",
-      link: "www.google.com"
     },
     {
       id: 2,

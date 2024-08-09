@@ -22,43 +22,6 @@ const handleInput = (e) => {
   });
 }
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
-  const config = {
-    SecureToken: 'ef6d6c3b-fc77-4e83-bd15-a89059f0bca8',
-    To : 'pandeyy304@gmail.com',
-    From : contact.email,
-    Subject : "This is the subject",
-    Body : `Name : ${contact.name},
-          Mobile : ${contact.phone},
-          Topic : ${contact.subject},
-          Message : ${contact.message}`
-  }
-  if(window.Email){
-    window.Email.send(config).then(() => alert("Your message sent successfully."));
-  }
-  setContact({ username: "", phone: "", email: "", subject: "", message: "" });
-}
-
-// const handleSubmit = async (e) => {
-//   e.preventDefault();;
-
-//     const response = await fetch('https://my-portfolio-src-iota.vercel.app', {
-//       method: 'POST', 
-//       body: JSON.stringify(contact),
-//       headers:{
-//       'Content-Type':'application/json'
-//       }
-//     })
-//     const data = await response.json();
-//     console.log(data);
-//     if (response.ok) {
-//       alert("Thank You for messaging.");
-//       setContact({ username: "", phone: "", email: "", subject: "", message: "" });
-//     } else {
-//       console.log("error inside response ", "error");
-//     }
-//   }
 
   return (
     <section className="contact container section" id="contact">
@@ -70,8 +33,9 @@ const handleSubmit = async (e) => {
           <p className="contact_details">Connect with me. I would love to hear from you.</p>
         </div>
 
-        <form onSubmit={handleSubmit} className="contact_form">
+        <form action="https://api.web3forms.com/submit" method="POST" className="contact_form">
           <div className="contact_form-group">
+            <input type="hidden" name="access_key" value="47ca684f-c3f7-44b9-8736-83b053a7466a"/>
             <div className="contact_form-div">
               <input type="text" name="username" id="username" value={contact.username} onChange={handleInput} className="contact_form-input" placeholder='Write your name' required/>
             </div>

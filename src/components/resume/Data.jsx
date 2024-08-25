@@ -5,7 +5,7 @@ const Data = [
       icon: "icon-graduation",
       year: "2021 - Present",
       title: "Bachelors of Technology (B.Tech)",
-      desc: "Pursuing B.Tech in Metallurgical and Materials Engineering from NIT Durgapur. CGPA - 7.93 (till 5th sem).",
+      desc: "Pursuing B.Tech in Metallurgical and Materials Engineering from NIT Durgapur. CGPA - 8.09",
     },
     {
       id: 2,
